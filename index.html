@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">My Porfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+            
+              <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                <li><a class="dropdown-item" href="#">Another action 2</a></li>
+                <li>
+                  <a class="dropdown-item disabled">Disabled</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul> -->
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn-primary" type="submit">
+              <!-- <i class="fa fa-camera fa-stack-1x"></i> -->
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <!-- <i class=""></i>  -->
+
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid" id="header">
+      
+    </div>
+
+    
+    <!-- about Start -->
+    <div id="about" class="about-container-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <img
+              class="about-image"
+              src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            />
+          </div>
+          <div class="col-sm-12 col-md-8">
+            <!-- NEW CODE -->
+
+            <div
+              class="card p-3 "
+              style="max-width: 600px; background-color: black"
+            >
+              <h2 class=" p-3">About Me</h2>
+              <nav class="nabvar1">
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active  color1"
+                    id="nav-home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                  >
+                    Skills
+                  </button>
+                  <button
+                    class="nav-link color1"
+                    id="nav-profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                  >
+                    Experience
+                  </button>
+                  <button
+                    class="nav-link color1"
+                    id="nav-contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-contact"
+                    aria-selected="false"
+                  >
+                    Education
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade active show"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                >
+                <lu>
+                  <li><span>UI/UX</span><bar>Designing Web/app interfaces</li>
+                    <li><span>Web Development</span><bar>Web app Develpment</li>
+                      <li><span>App Development</span><bar>Duilding Android.iOS apps</li>
+                </lu>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-profile"
+                  role="tabpanel"
+                  aria-labelledby="nav-profile-tab"
+                >
+                <lu>
+                  <li><span>UI/UX</span><bar>Designing Web/app interfaces</li>
+                    <li><span>Web Development</span><bar>Web app Develpment</li>
+                      <li><span>App Development</span><bar>Duilding Android.iOS apps</li>
+                </lu>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-contact"
+                  role="tabpanel"
+                  aria-labelledby="nav-contact-tab"
+                >
+                <lu>
+                  <li><span>UI/UX</span><bar>Designing Web/app interfaces</li>
+                    <li><span>Web Development</span><bar>Web app Develpment</li>
+                      <li><span>App Development</span><bar>Duilding Android.iOS apps</li>
+                </lu>                
+              </div>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services" class="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list list div">
+          <div class="col">
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+              earum ipsum animi?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="col">
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+              earum ipsum animi?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="col">
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+              earum ipsum animi?
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="https://www.template-creator.com/images/blog/iphone.jpg"
+            />
+          </div>
+          <div class="work">
+            <img
+              src="https://www.template-creator.com/images/blog/iphone.jpg"
+            />
+          </div>
+          <div class="work">
+            <img
+              src="https://www.template-creator.com/images/blog/iphone.jpg"
+            />
+          </div>
+        </div>
+        <a href="#">See More</a>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="contact">
+      <div class="container">
+        <h1 class="sub-title mb-5 text-center">Contact Us</h1>
+        <div class="row adjust">
+          <div class="contact-left col">
+           
+            <ul>
+              <li>Address</li>
+              <p>secret area</p>
+            </ul>
+            <ul>
+              <li>Email</li>
+              <p>it's me natoy_Gmail.com</p>
+            </ul>
+            <ul>
+              <li>Phone</li>
+              <p>09126753451</p>
+            </ul>
+          </div>
+          <div class="contact-righ col">
+            <form>
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="phone"
+                name="phone"
+                placeholder="Your Phone"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+            </form>
+            <button type="submit" class="btn btn2">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
